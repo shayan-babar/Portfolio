@@ -13,7 +13,9 @@
 
 :root {
     --bg-color: rgb(0, 0, 0);
-    --second-bg-color: #4b1e1e;
+    /*--second-bg-color: #3e3b3b;*/
+    /*--second-bg-color: #141212;*/
+    --second-bg-color: #1f1e1e;
     --text-color: #ffffff;
     --main-2-color: #ff0000;
 }
@@ -49,7 +51,7 @@ section {
 }
 
 .header img {
-    height: 30px;
+    height: 35px;
 }
 
 .header.sticky {
@@ -429,7 +431,7 @@ span {
 }
 
 ::placeholder {
-    color: var(--text-color);
+    color: rgb(96, 96, 96);
 }
 
 .contact form .input-box input {
@@ -447,20 +449,28 @@ span {
     cursor: pointer;
 }
 
+.line {
+    width: 100%; /* Adjust as needed */
+    height: 1px; /* Thickness of the line */
+    background-color: var(--main-2-color) /* Color of the line */
+}
+
 /* Footer design */
 
 .footer {
     display: flex;
     justify-content: space-between;
+    background: rgb(0, 0, 0);
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+
 }
 
 /* footer paragraph design */
 
 .footer-text p {
+    color: var(--text-color);
     font-size: 1.6rem;
 }
 
@@ -471,7 +481,7 @@ span {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: var(--main-2-color);
+    background: #ff0000;
     border-radius: .8rem;
     transition: .5s ease;
 }
@@ -485,6 +495,9 @@ span {
     color: #ffffff;
 }
 
+.footer-iconTop a i:hover {
+    color: var(--bg-color);
+}
 
 /* BREAKPOINTS */
 
@@ -517,6 +530,11 @@ span {
 
     .footer {
         padding: 2rem 3%;
+    }
+    .line {
+        width: 100%; /* Adjust as needed */
+        height: 1px; /* Thickness of the line */
+        background-color: var(--main-2-color) /* Color of the line */
     }
 }
 
@@ -584,6 +602,11 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .line {
+        width: 100%; /* Adjust as needed */
+        height: 1px; /* Thickness of the line */
+        background-color: var(--main-2-color) /* Color of the line */
+    }
 }
 
 @media (max-width: 617px) {
@@ -599,6 +622,11 @@ span {
 
     .contact form .input-box input {
         width: 100%;
+    }
+    .line {
+        width: 100%; /* Adjust as needed */
+        height: 1px; /* Thickness of the line */
+        background-color: var(--main-2-color) /* Color of the line */
     }
 }
 
@@ -618,5 +646,10 @@ span {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+    .line {
+        width: 100%; /* Adjust as needed */
+        height: 1px; /* Thickness of the line */
+        background-color: var(--main-2-color) /* Color of the line */
     }
 }
